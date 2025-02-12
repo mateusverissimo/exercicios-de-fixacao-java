@@ -16,5 +16,12 @@ public class Inferencia {
         c = "Outro texto";
         System.out.println(c);
 
+        //c = 4.5;
+
+        double d; // variavel foi declarada
+        d = 123.65; // variavel foi inicializada
+        System.out.println(d);
+
+
     }
 }
