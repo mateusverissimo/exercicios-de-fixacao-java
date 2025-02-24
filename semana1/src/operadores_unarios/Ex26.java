@@ -7,15 +7,25 @@ public class Ex26 {
         Scanner input = new Scanner(System.in);
 
         int tentativas = 5;
+        String senha = "1234";
 
+        System.out.println("Digite sua senha de 4 dígitos: ");
 
-        System.out.print("Login: ");
-        String login = input.nextLine();
+        System.out.println("Tentativas restantes: " + tentativas--);
+        senha = input.nextLine();
 
-        System.out.println("senha: ");
-        String senha = input.nextLine();
+        System.out.println("Tentativas restantes: " + tentativas--);
+        senha = input.nextLine();
 
-        boolean acesso = (login.equals("admin") && senha.equals("1234"));
-        System.out.println("");
+        System.out.println("Tentativas restantes: " + tentativas--);
+        senha = input.nextLine();
+
+        System.out.println("Tentativas restantes: " + tentativas--);
+        senha = input.nextLine();
+
+        System.out.println("Tentativas restantes: " + tentativas--);
+        senha = input.nextLine();
+
+        input.close();
     }
 }
