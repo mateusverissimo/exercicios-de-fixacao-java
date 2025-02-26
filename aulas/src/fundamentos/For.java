@@ -9,8 +9,18 @@ public class For {
 //            contador += 2;
 //        }
 
-        for (int contador = 0; contador <= 20; contador += 2) {
+        for (int contador = 0; contador <= 20; contador ++) {
             System.out.printf("i = %d\n", contador);
+        }
+
+        int x = 2;
+        for(; x < 10;) {
+            System.out.println("x = " + x);
+            x++;
+        }
+
+        for(;;) {
+
         }
     }
 }
