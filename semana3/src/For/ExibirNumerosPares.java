@@ -3,20 +3,16 @@ package For;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class SomarNumeros {
+public class ExibirNumerosPares {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in).useLocale(Locale.US);
 
-        int soma = 0;
-
         System.out.print("Digite um número: ");
         int num = input.nextInt();
 
-
-        for (int i = 1; i <= num; i++) {
-            soma += i;
+        for (int i = 0; i <= num; i += 2) {
+            System.out.println(i);
         }
-        System.out.println(soma);
     }
 }
