@@ -8,9 +8,12 @@ public class NumImparesPares {
 
         Scanner input = new Scanner(System.in).useLocale(Locale.US);
 
-        System.out.print("Digite um número");
+        System.out.print("Digite um número: ");
         int num = input.nextInt();
 
-
+        for (int i = 1; i <= num; i++) {
+            if (i % 2 == 0) continue;
+            System.out.println(i);
+        }
     }
 }

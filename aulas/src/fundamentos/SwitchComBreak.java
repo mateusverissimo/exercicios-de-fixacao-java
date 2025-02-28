@@ -14,23 +14,14 @@ public class SwitchComBreak {
         System.out.print("Informe a nota: ");
         int nota = input.nextInt();
 
-        switch(nota) {
-            case 10: case 9:
-                conceito = "A";
-                break;
-            case 8: case 7:
-                conceito = "B";
-                break;
-            case 6: case 5:
-                conceito = "B";
-            case 6: case 5:
-                conceito = "B";
-            case 6: case 5:
-                conceito = "";
-                break;
-            default:
-                conceito = "não informado!";
-        }
+        conceito = switch (nota) {
+            case 10, 9 -> "A";
+            case 8, 7 -> "B";
+            case 6, 5 -> "C";
+            case 4, 3 -> "D";
+            case 2, 1 -> "E";
+            default -> "não informado!";
+        };
 
         System.out.println("Conceito é " + conceito);
         input.close();
