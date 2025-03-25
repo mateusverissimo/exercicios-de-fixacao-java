@@ -11,7 +11,7 @@ public class Foreach {
 
         System.out.println();
 
-        for (double nota: notas) {
+        for (double nota: notas) { // FOREACH: "para cada" nota em notas, printe no console
             System.out.print(nota + "  ");
         }
     }
