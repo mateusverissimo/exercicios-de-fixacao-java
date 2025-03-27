@@ -3,6 +3,7 @@ package collections;
 import java.util.HashSet;
 import java.util.Set;
 
+@SuppressWarnings({"rawtypes", "unchecked"}) // para tirar as warnings do codigo
 public class ConjuntoBaguncado {
 
     public static void main(String[] args) {
