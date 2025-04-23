@@ -43,7 +43,7 @@ public class Fila {
         System.out.println(fila.poll());
         System.out.println(fila.poll());
         System.out.println(fila.poll());
-        //System.out.println(fila.remove()); // lança uma exceção
+        System.out.println(fila.remove()); // lança uma exceção
 
         // fila.size();
         // fila.clear();
